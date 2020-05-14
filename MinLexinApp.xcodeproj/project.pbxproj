@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C95312253BE844192F16151 /* Pods_MinLexinAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD7676C6006EB145B384031 /* Pods_MinLexinAppTests.framework */; };
+		C4504EE62463EC8F0077F3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4504EE52463EC8F0077F3AF /* AppDelegate.swift */; };
+		C4504EE82463EC8F0077F3AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4504EE72463EC8F0077F3AF /* SceneDelegate.swift */; };
+		C4504EEA2463EC8F0077F3AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4504EE92463EC8F0077F3AF /* ViewController.swift */; };
+		C4504EED2463EC8F0077F3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4504EEB2463EC8F0077F3AF /* Main.storyboard */; };
+		C4504EEF2463EC9C0077F3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4504EEE2463EC9C0077F3AF /* Assets.xcassets */; };
+		C4504EF22463EC9C0077F3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4504EF02463EC9C0077F3AF /* LaunchScreen.storyboard */; };
+		C4504EFD2463EC9C0077F3AF /* MinLexinAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4504EFC2463EC9C0077F3AF /* MinLexinAppTests.swift */; };
+		C4504F082463EC9C0077F3AF /* MinLexinAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4504F072463EC9C0077F3AF /* MinLexinAppUITests.swift */; };
+		C4504F162463EFD30077F3AF /* OrdCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4504F152463EFD30077F3AF /* OrdCellTableViewCell.swift */; };
+		C48E73D824640042005A206D /* OrdDetaljViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48E73D724640042005A206D /* OrdDetaljViewController.swift */; };
+		C48E73DA246402B8005A206D /* Ord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48E73D9246402B8005A206D /* Ord.swift */; };
+		C4E4255F246429F6006DD398 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4E4255E246429F6006DD398 /* GoogleService-Info.plist */; };
+		E885ACDDD50472436E018910 /* Pods_MinLexinApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAD0E192B03A0587132E623 /* Pods_MinLexinApp.framework */; };
+		FEE8B6763B537BFE3928BFFC /* Pods_MinLexinApp_MinLexinAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C97EC2D94B0F9E900244000 /* Pods_MinLexinApp_MinLexinAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4504EF92463EC9C0077F3AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4504EDA2463EC8E0077F3AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4504EE12463EC8F0077F3AF;
+			remoteInfo = MinLexinApp;
+		};
+		C4504F042463EC9C0077F3AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4504EDA2463EC8E0077F3AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4504EE12463EC8F0077F3AF;
+			remoteInfo = MinLexinApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18142497B0457B85DF2C7E29 /* Pods-MinLexinApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinLexinApp.debug.xcconfig"; path = "Target Support Files/Pods-MinLexinApp/Pods-MinLexinApp.debug.xcconfig"; sourceTree = "<group>"; };
+		18D8E070B9478C02F51719F9 /* Pods-MinLexinAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinLexinAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MinLexinAppTests/Pods-MinLexinAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		22DA6B4A13C7EFDC9D3F47BA /* Pods-MinLexinApp-MinLexinAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinLexinApp-MinLexinAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MinLexinApp-MinLexinAppUITests/Pods-MinLexinApp-MinLexinAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		390691F6DA7CFB78CB1B030F /* Pods-MinLexinApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinLexinApp.release.xcconfig"; path = "Target Support Files/Pods-MinLexinApp/Pods-MinLexinApp.release.xcconfig"; sourceTree = "<group>"; };
+		3C97EC2D94B0F9E900244000 /* Pods_MinLexinApp_MinLexinAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinLexinApp_MinLexinAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FAD0E192B03A0587132E623 /* Pods_MinLexinApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinLexinApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD7676C6006EB145B384031 /* Pods_MinLexinAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinLexinAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3ECFAD7926187762009A6FB /* Pods-MinLexinApp-MinLexinAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinLexinApp-MinLexinAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MinLexinApp-MinLexinAppUITests/Pods-MinLexinApp-MinLexinAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C4504EE22463EC8F0077F3AF /* MinLexinApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinLexinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4504EE52463EC8F0077F3AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4504EE72463EC8F0077F3AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C4504EE92463EC8F0077F3AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4504EEC2463EC8F0077F3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4504EEE2463EC9C0077F3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4504EF12463EC9C0077F3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4504EF32463EC9C0077F3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4504EF82463EC9C0077F3AF /* MinLexinAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinLexinAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4504EFC2463EC9C0077F3AF /* MinLexinAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinLexinAppTests.swift; sourceTree = "<group>"; };
+		C4504EFE2463EC9C0077F3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4504F032463EC9C0077F3AF /* MinLexinAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinLexinAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4504F072463EC9C0077F3AF /* MinLexinAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinLexinAppUITests.swift; sourceTree = "<group>"; };
+		C4504F092463EC9C0077F3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4504F152463EFD30077F3AF /* OrdCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdCellTableViewCell.swift; sourceTree = "<group>"; };
+		C48E73D724640042005A206D /* OrdDetaljViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdDetaljViewController.swift; sourceTree = "<group>"; };
+		C48E73D9246402B8005A206D /* Ord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ord.swift; sourceTree = "<group>"; };
+		C4E4255E246429F6006DD398 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3CEB8A742EDE7F05969BA2E /* Pods-MinLexinAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinLexinAppTests.release.xcconfig"; path = "Target Support Files/Pods-MinLexinAppTests/Pods-MinLexinAppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4504EDF2463EC8F0077F3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E885ACDDD50472436E018910 /* Pods_MinLexinApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4504EF52463EC9C0077F3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C95312253BE844192F16151 /* Pods_MinLexinAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4504F002463EC9C0077F3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE8B6763B537BFE3928BFFC /* Pods_MinLexinApp_MinLexinAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12A64375C9DDC33C9E6FD82C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18142497B0457B85DF2C7E29 /* Pods-MinLexinApp.debug.xcconfig */,
+				390691F6DA7CFB78CB1B030F /* Pods-MinLexinApp.release.xcconfig */,
+				22DA6B4A13C7EFDC9D3F47BA /* Pods-MinLexinApp-MinLexinAppUITests.debug.xcconfig */,
+				A3ECFAD7926187762009A6FB /* Pods-MinLexinApp-MinLexinAppUITests.release.xcconfig */,
+				18D8E070B9478C02F51719F9 /* Pods-MinLexinAppTests.debug.xcconfig */,
+				D3CEB8A742EDE7F05969BA2E /* Pods-MinLexinAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4504ED92463EC8E0077F3AF = {
+			isa = PBXGroup;
+			children = (
+				C4504EE42463EC8F0077F3AF /* MinLexinApp */,
+				C4504EFB2463EC9C0077F3AF /* MinLexinAppTests */,
+				C4504F062463EC9C0077F3AF /* MinLexinAppUITests */,
+				C4504EE32463EC8F0077F3AF /* Products */,
+				12A64375C9DDC33C9E6FD82C /* Pods */,
+				F0027CBA60CD24DD8D2DB472 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4504EE32463EC8F0077F3AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4504EE22463EC8F0077F3AF /* MinLexinApp.app */,
+				C4504EF82463EC9C0077F3AF /* MinLexinAppTests.xctest */,
+				C4504F032463EC9C0077F3AF /* MinLexinAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4504EE42463EC8F0077F3AF /* MinLexinApp */ = {
+			isa = PBXGroup;
+			children = (
+				C4504EE52463EC8F0077F3AF /* AppDelegate.swift */,
+				C4504EE72463EC8F0077F3AF /* SceneDelegate.swift */,
+				C4504EE92463EC8F0077F3AF /* ViewController.swift */,
+				C4504EEB2463EC8F0077F3AF /* Main.storyboard */,
+				C48E73D724640042005A206D /* OrdDetaljViewController.swift */,
+				C4504EEE2463EC9C0077F3AF /* Assets.xcassets */,
+				C4504EF02463EC9C0077F3AF /* LaunchScreen.storyboard */,
+				C4504EF32463EC9C0077F3AF /* Info.plist */,
+				C4504F152463EFD30077F3AF /* OrdCellTableViewCell.swift */,
+				C48E73D9246402B8005A206D /* Ord.swift */,
+				C4E4255E246429F6006DD398 /* GoogleService-Info.plist */,
+			);
+			path = MinLexinApp;
+			sourceTree = "<group>";
+		};
+		C4504EFB2463EC9C0077F3AF /* MinLexinAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4504EFC2463EC9C0077F3AF /* MinLexinAppTests.swift */,
+				C4504EFE2463EC9C0077F3AF /* Info.plist */,
+			);
+			path = MinLexinAppTests;
+			sourceTree = "<group>";
+		};
+		C4504F062463EC9C0077F3AF /* MinLexinAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4504F072463EC9C0077F3AF /* MinLexinAppUITests.swift */,
+				C4504F092463EC9C0077F3AF /* Info.plist */,
+			);
+			path = MinLexinAppUITests;
+			sourceTree = "<group>";
+		};
+		F0027CBA60CD24DD8D2DB472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FAD0E192B03A0587132E623 /* Pods_MinLexinApp.framework */,
+				3C97EC2D94B0F9E900244000 /* Pods_MinLexinApp_MinLexinAppUITests.framework */,
+				9BD7676C6006EB145B384031 /* Pods_MinLexinAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4504EE12463EC8F0077F3AF /* MinLexinApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4504F0C2463EC9C0077F3AF /* Build configuration list for PBXNativeTarget "MinLexinApp" */;
+			buildPhases = (
+				4A463FDFDDAD6083D6EE7EF5 /* [CP] Check Pods Manifest.lock */,
+				C4504EDE2463EC8F0077F3AF /* Sources */,
+				C4504EDF2463EC8F0077F3AF /* Frameworks */,
+				C4504EE02463EC8F0077F3AF /* Resources */,
+				F09422C70BA3DFA92ABDDE6C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinLexinApp;
+			productName = MinLexinApp;
+			productReference = C4504EE22463EC8F0077F3AF /* MinLexinApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4504EF72463EC9C0077F3AF /* MinLexinAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4504F0F2463EC9C0077F3AF /* Build configuration list for PBXNativeTarget "MinLexinAppTests" */;
+			buildPhases = (
+				AFD2BA4C8554597045FAF888 /* [CP] Check Pods Manifest.lock */,
+				C4504EF42463EC9C0077F3AF /* Sources */,
+				C4504EF52463EC9C0077F3AF /* Frameworks */,
+				C4504EF62463EC9C0077F3AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4504EFA2463EC9C0077F3AF /* PBXTargetDependency */,
+			);
+			name = MinLexinAppTests;
+			productName = MinLexinAppTests;
+			productReference = C4504EF82463EC9C0077F3AF /* MinLexinAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4504F022463EC9C0077F3AF /* MinLexinAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4504F122463EC9C0077F3AF /* Build configuration list for PBXNativeTarget "MinLexinAppUITests" */;
+			buildPhases = (
+				7681FF10F7CC6CBE6AC0472A /* [CP] Check Pods Manifest.lock */,
+				C4504EFF2463EC9C0077F3AF /* Sources */,
+				C4504F002463EC9C0077F3AF /* Frameworks */,
+				C4504F012463EC9C0077F3AF /* Resources */,
+				893F86C38169AA89629A89F4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4504F052463EC9C0077F3AF /* PBXTargetDependency */,
+			);
+			name = MinLexinAppUITests;
+			productName = MinLexinAppUITests;
+			productReference = C4504F032463EC9C0077F3AF /* MinLexinAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4504EDA2463EC8E0077F3AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Shamo Zahidov";
+				TargetAttributes = {
+					C4504EE12463EC8F0077F3AF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C4504EF72463EC9C0077F3AF = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C4504EE12463EC8F0077F3AF;
+					};
+					C4504F022463EC9C0077F3AF = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C4504EE12463EC8F0077F3AF;
+					};
+				};
+			};
+			buildConfigurationList = C4504EDD2463EC8E0077F3AF /* Build configuration list for PBXProject "MinLexinApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4504ED92463EC8E0077F3AF;
+			productRefGroup = C4504EE32463EC8F0077F3AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4504EE12463EC8F0077F3AF /* MinLexinApp */,
+				C4504EF72463EC9C0077F3AF /* MinLexinAppTests */,
+				C4504F022463EC9C0077F3AF /* MinLexinAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4504EE02463EC8F0077F3AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4504EF22463EC9C0077F3AF /* LaunchScreen.storyboard in Resources */,
+				C4E4255F246429F6006DD398 /* GoogleService-Info.plist in Resources */,
+				C4504EEF2463EC9C0077F3AF /* Assets.xcassets in Resources */,
+				C4504EED2463EC8F0077F3AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4504EF62463EC9C0077F3AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4504F012463EC9C0077F3AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A463FDFDDAD6083D6EE7EF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MinLexinApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7681FF10F7CC6CBE6AC0472A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MinLexinApp-MinLexinAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		893F86C38169AA89629A89F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MinLexinApp-MinLexinAppUITests/Pods-MinLexinApp-MinLexinAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MinLexinApp-MinLexinAppUITests/Pods-MinLexinApp-MinLexinAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MinLexinApp-MinLexinAppUITests/Pods-MinLexinApp-MinLexinAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD2BA4C8554597045FAF888 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MinLexinAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F09422C70BA3DFA92ABDDE6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MinLexinApp/Pods-MinLexinApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MinLexinApp/Pods-MinLexinApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MinLexinApp/Pods-MinLexinApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4504EDE2463EC8F0077F3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4504EEA2463EC8F0077F3AF /* ViewController.swift in Sources */,
+				C4504F162463EFD30077F3AF /* OrdCellTableViewCell.swift in Sources */,
+				C4504EE62463EC8F0077F3AF /* AppDelegate.swift in Sources */,
+				C4504EE82463EC8F0077F3AF /* SceneDelegate.swift in Sources */,
+				C48E73D824640042005A206D /* OrdDetaljViewController.swift in Sources */,
+				C48E73DA246402B8005A206D /* Ord.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4504EF42463EC9C0077F3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4504EFD2463EC9C0077F3AF /* MinLexinAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4504EFF2463EC9C0077F3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4504F082463EC9C0077F3AF /* MinLexinAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4504EFA2463EC9C0077F3AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4504EE12463EC8F0077F3AF /* MinLexinApp */;
+			targetProxy = C4504EF92463EC9C0077F3AF /* PBXContainerItemProxy */;
+		};
+		C4504F052463EC9C0077F3AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4504EE12463EC8F0077F3AF /* MinLexinApp */;
+			targetProxy = C4504F042463EC9C0077F3AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4504EEB2463EC8F0077F3AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4504EEC2463EC8F0077F3AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4504EF02463EC9C0077F3AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4504EF12463EC9C0077F3AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4504F0A2463EC9C0077F3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4504F0B2463EC9C0077F3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4504F0D2463EC9C0077F3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18142497B0457B85DF2C7E29 /* Pods-MinLexinApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MinLexinApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dersler.MinLexinApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4504F0E2463EC9C0077F3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 390691F6DA7CFB78CB1B030F /* Pods-MinLexinApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MinLexinApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dersler.MinLexinApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4504F102463EC9C0077F3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D8E070B9478C02F51719F9 /* Pods-MinLexinAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MinLexinAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dersler.MinLexinAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinLexinApp.app/MinLexinApp";
+			};
+			name = Debug;
+		};
+		C4504F112463EC9C0077F3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3CEB8A742EDE7F05969BA2E /* Pods-MinLexinAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MinLexinAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dersler.MinLexinAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinLexinApp.app/MinLexinApp";
+			};
+			name = Release;
+		};
+		C4504F132463EC9C0077F3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DA6B4A13C7EFDC9D3F47BA /* Pods-MinLexinApp-MinLexinAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MinLexinAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dersler.MinLexinAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MinLexinApp;
+			};
+			name = Debug;
+		};
+		C4504F142463EC9C0077F3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3ECFAD7926187762009A6FB /* Pods-MinLexinApp-MinLexinAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MinLexinAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dersler.MinLexinAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MinLexinApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4504EDD2463EC8E0077F3AF /* Build configuration list for PBXProject "MinLexinApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4504F0A2463EC9C0077F3AF /* Debug */,
+				C4504F0B2463EC9C0077F3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4504F0C2463EC9C0077F3AF /* Build configuration list for PBXNativeTarget "MinLexinApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4504F0D2463EC9C0077F3AF /* Debug */,
+				C4504F0E2463EC9C0077F3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4504F0F2463EC9C0077F3AF /* Build configuration list for PBXNativeTarget "MinLexinAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4504F102463EC9C0077F3AF /* Debug */,
+				C4504F112463EC9C0077F3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4504F122463EC9C0077F3AF /* Build configuration list for PBXNativeTarget "MinLexinAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4504F132463EC9C0077F3AF /* Debug */,
+				C4504F142463EC9C0077F3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4504EDA2463EC8E0077F3AF /* Project object */;
+}

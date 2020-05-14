@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iAV-Kn-D3X">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ord-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MinLexinApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="x8m-BH-PJ7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vSg-KU-4ke">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ordCell" id="B2M-Va-V1P" customClass="OrdCellTableViewCell" customModule="MinLexinApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B2M-Va-V1P" id="p0X-Uk-aYJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Engelska" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1v-fD-YPk">
+                                                    <rect key="frame" x="60" y="11.5" width="69" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Svenska" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZN3-Rn-JGw">
+                                                    <rect key="frame" x="290" y="11.5" width="64" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZN3-Rn-JGw" secondAttribute="trailing" constant="40" id="d2U-Lv-m6C"/>
+                                                <constraint firstItem="ZN3-Rn-JGw" firstAttribute="centerY" secondItem="p0X-Uk-aYJ" secondAttribute="centerY" id="fXT-a3-Flk"/>
+                                                <constraint firstItem="J1v-fD-YPk" firstAttribute="leading" secondItem="p0X-Uk-aYJ" secondAttribute="leadingMargin" constant="40" id="mw6-a4-7oR"/>
+                                                <constraint firstItem="J1v-fD-YPk" firstAttribute="centerY" secondItem="p0X-Uk-aYJ" secondAttribute="centerY" id="nv3-4o-ZF9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="engelskaLabel" destination="J1v-fD-YPk" id="00n-DF-wDA"/>
+                                            <outlet property="svenskaLabel" destination="ZN3-Rn-JGw" id="pIQ-RT-VIr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vSg-KU-4ke" secondAttribute="bottom" id="BsK-C9-nWR"/>
+                            <constraint firstItem="vSg-KU-4ke" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jlb-Ti-9Bf"/>
+                            <constraint firstItem="vSg-KU-4ke" firstAttribute="top" secondItem="x8m-BH-PJ7" secondAttribute="bottom" symbolic="YES" id="MGq-7y-kDk"/>
+                            <constraint firstItem="vSg-KU-4ke" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eAu-ga-1xD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vSg-KU-4ke" secondAttribute="trailing" id="eSM-sj-faI"/>
+                            <constraint firstItem="x8m-BH-PJ7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="faU-v2-tvP"/>
+                            <constraint firstItem="x8m-BH-PJ7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hLe-pb-DRM"/>
+                            <constraint firstItem="vSg-KU-4ke" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="i21-iT-nrD"/>
+                            <constraint firstItem="vSg-KU-4ke" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="irj-I9-uhW"/>
+                            <constraint firstItem="x8m-BH-PJ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lJu-eE-whF"/>
+                            <constraint firstItem="vSg-KU-4ke" firstAttribute="top" secondItem="x8m-BH-PJ7" secondAttribute="bottom" symbolic="YES" id="qZc-MC-0w2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ord" id="pl8-gM-0G3"/>
+                    <connections>
+                        <outlet property="ordTableView" destination="vSg-KU-4ke" id="Sig-iT-Dbh"/>
+                        <outlet property="searchBarn" destination="x8m-BH-PJ7" id="PeC-XP-C9k"/>
+                        <segue destination="p9n-SW-BPb" kind="show" identifier="toOrdDetail" id="3Vo-HC-BYl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="116.51785714285714"/>
+        </scene>
+        <!--Ord Detalj-->
+        <scene sceneID="ENm-3x-n3n">
+            <objects>
+                <viewController id="p9n-SW-BPb" customClass="OrdDetaljViewController" customModule="MinLexinApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xpd-f0-UVd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldZ-GO-Ggp">
+                                <rect key="frame" x="160" y="264" width="94" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-e3-1dB">
+                                <rect key="frame" x="160" y="470" width="94" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ldZ-GO-Ggp" firstAttribute="top" secondItem="eRM-1d-f9L" secondAttribute="top" constant="176" id="BE8-JC-UoM"/>
+                            <constraint firstItem="ddd-e3-1dB" firstAttribute="top" secondItem="ldZ-GO-Ggp" secondAttribute="bottom" constant="158" id="dH9-Ni-Rz2"/>
+                            <constraint firstItem="ldZ-GO-Ggp" firstAttribute="centerX" secondItem="xpd-f0-UVd" secondAttribute="centerX" id="gic-6k-nOj"/>
+                            <constraint firstItem="ddd-e3-1dB" firstAttribute="centerX" secondItem="xpd-f0-UVd" secondAttribute="centerX" id="tBR-B6-QTm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eRM-1d-f9L"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ord Detalj" id="FoO-FY-4sJ"/>
+                    <connections>
+                        <outlet property="engelskaLabel" destination="ldZ-GO-Ggp" id="bdE-7b-NnS"/>
+                        <outlet property="svenskaLabel" destination="ddd-e3-1dB" id="3f8-Gw-fDi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RsE-MF-n9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1755" y="117"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mZh-Ph-Q5y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iAV-Kn-D3X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d6Z-fa-F3B">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Y2H-ny-dTG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIK-Cd-Bh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
